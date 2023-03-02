@@ -40,11 +40,11 @@ def searchTask(querry):
     return None
 
 def doTask(task):
-    task = taskList[searchTask(task)]
-    if not task:
+    if searchTask(task) == None:
         print("Error: task not found.")
         return
     global status
+    task = taskList[searchTask(task)]
     task.update({status: "done"})
     print(f"Task {task[name]} status changed with sucess (done).")
 

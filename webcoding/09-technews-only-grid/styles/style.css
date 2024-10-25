@@ -103,6 +103,17 @@ h1{
     margin: 0px auto; /*gambiarra*/
 }
 
+/*.header-nav li:hover{
+    background-color: var(--black);
+    margin: -.8em -1em;
+    padding: .8em 1em;
+    border-radius: 5px;
+}
+
+.header-nav li:hover *{
+    color: white;
+}*/
+
 .header-nav a:hover{
     color:var(--gray);
     transition: 200ms ease-in-out;

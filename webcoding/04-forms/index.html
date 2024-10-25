@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Forms are a structure type designed for feedback! </title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulários</h1>
+        </header>
+
+        <section>
+           <form method="get" action="destino.html">
+                <div>
+                    <label for="input" >Isso é um formulário de texto.</label>
+                    <input id="input1" type="text" name="nome" placeholder="Nome completo"/>
+                </div>
+
+                <div>
+                    <label for="input" >Isso é um formulário numérico.</label>
+                    <input id="input2" type="number" name="idade" placeholder="Idade"/>    
+                </div>                
+                
+                <div>
+                    <label for="input" >Isso é um formulário de e-mail.</label>
+                    <input id="input3" type="email" name="e-mail" placeholder="E-mail"/>    
+                </div>
+
+                <div>
+                    <label for="input" >Isso é um formulário de data.</label>
+                    <input id="input4" type="date" name="datadenasc" placeholder="DD/MM/AAAA"/>    
+                </div>
+
+                <div>
+                    <label for="input" >Isso é um formulário de senha.</label>
+                    <input id="input5" type="password" name="senha" placeholder="Senha"/>    
+                </div>
+
+                <h3>Dados de Entrega</h3>
+                
+                <div>
+                    <label> Escolha a cidade de entrega: </label>
+                    <select name="cidade">
+                        <option value="JDN">Juazeiro</option>
+                        <option value="BS">Brejo Santo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label> Logradouro: </label>
+                    <input type="radio"value="rur" name="Zona"> Zona Rural
+                    <input type="radio" value="urb" name="Zona"> Zona Urbana
+                </div>
+                
+                <div>
+                    <label> Quem pode receber: </label>
+                    <p><input type="checkbox" value="mae" name="rec"> Mãe</p>
+                    <p><input type="checkbox" value="pai" name="rec"> Pai</p>
+                    <p><input type="checkbox" value="irmao" name="rec"> Irmã(o)</p>
+                    <p><input type="checkbox" value="vizinho" name="rec"> Vizinho(a)</p>    
+                    
+                </div>
+
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                    <button> Esse é um botão.   </button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p></p>
+        </footer>
+    </body>
+</html>

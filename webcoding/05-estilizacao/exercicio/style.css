@@ -1,0 +1,41 @@
+html,* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+
+}
+
+section{
+    padding: 8% 0 0 5%;
+}
+
+main header{
+    color: #7F0BBA;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+main header p{
+    margin: 2% 0;
+}
+
+main aside p{
+    /*"institucional" margin > text margin*/
+    margin: .8% 0;
+}
+
+main aside{
+    font-size: 1.5rem;
+    padding:0 0 0 4%;
+}
+
+footer{
+    background-color: #7F0BBA;
+    color:azure;
+    padding: 1.5rem 5%;
+    font-size: 1.2rem;
+    position: fixed; /*always at the bottom*/
+    bottom: 0;
+    height: auto;
+    width: 100%; /*make it fills the width*/
+}

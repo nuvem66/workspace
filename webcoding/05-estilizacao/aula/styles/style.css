@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    color:azure;
+}
+
+section{
+    background-color:darkred;
+    width: 360px;
+}
+
+header p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 18px;
+    color: #6666;
+    font-weight: bold;
+}

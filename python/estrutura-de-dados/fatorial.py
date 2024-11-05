@@ -12,8 +12,10 @@ def fator(a):
 
     return a
 
+def fatorRecur(a):
+    if a == 0 or a == 1:
+        return 1
+    else:
+        return a * fatorRecur(a-1)
 
-print(fator(7))
-print(fator(5))
-print(fator(9))
-print(fator(12))
+print(fatorRecur(5))

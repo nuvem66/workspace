@@ -1,5 +1,6 @@
 let discount = .25
 let tax = .20
+
 products = [
     mouse = { 
         name: 'Wireless Mouse', 

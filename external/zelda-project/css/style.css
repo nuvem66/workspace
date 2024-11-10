@@ -1,0 +1,126 @@
+@import url('https://fonts.cdnfonts.com/css/triforce');
+
+body{
+    font-size: 20px;
+    font-family: 'Triforce', sans-serif;
+    color: white;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de4f8028-8b33-49d8-b888-2b19d1992fab/demn0bq-3e4ce8f0-58fb-45cb-b8bf-1f3df4fbb7ba.jpg/v1/fill/w_1192,h_670,q_70,strp/background_the_legend_of_zelda__2_by_kenji_cosplay_studio_demn0bq-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZGU0ZjgwMjgtOGIzMy00OWQ4LWI4ODgtMmIxOWQxOTkyZmFiXC9kZW1uMGJxLTNlNGNlOGYwLTU4ZmItNDVjYi1iOGJmLTFmM2RmNGZiYjdiYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ABy4dHJhQ1hwK2oMDg8ENkZqi89TmNq0ObH8AwRif0c);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    width: 80%;
+    margin:auto;
+}
+
+p, a, li{
+    margin: .5rem 0;
+}
+
+h1, h2, h3{
+    color: #e0cb9f;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 1);
+    margin: 1rem 0;
+}
+
+h1{
+    font-size: 56px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+
+h3{
+    font-size: 40px;
+}
+
+a{
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+    color: #e0cb9f;
+    text-decoration: none;
+    font-style: italic;
+    transition: all .5s ease;
+}
+a:hover{
+    color: hsl(41, 51%, 50%);
+}
+
+.intro > header{
+    text-align: center;
+    border:10px solid rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 100px 10px;
+    background: url(https://www.pixelstalk.net/wp-content/uploads/images2/Download-Hd-Zelda-Wallpapers-Images.jpg);
+    background-position: center;
+    background-size: 100%;
+    transition: 1s ease
+} 
+.intro > header:hover{
+    background-size: 120%;
+}
+
+.summary *{
+    margin: 10px 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main footer{
+    width: 100%;
+}
+
+.participation, .benefits, .requirements{
+    flex: 1 1 30ch;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+.participation{
+    margin: 0 5px 0 0;
+}
+.benefits{
+    margin: 0 5px 0 5px;
+}
+.requirements{
+    margin: 0 0 0 5px;
+}
+
+.participation:hover, .benefits:hover, .requirements:hover{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#zen-supporting > footer{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.sidebar > .wrapper{
+    background: url(https://wallpapercave.com/wp/wp10602533.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    border: 10px solid  rgba(0, 0, 0, .4);
+    padding: 10px;
+    transition: all 1s ease;
+}
+
+.sidebar > .wrapper:hover{
+    background-size: 120%;
+}
+
+.sidebar > .wrapper > *{
+    flex: 1 1 100%;
+}

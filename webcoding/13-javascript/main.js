@@ -1,5 +1,5 @@
-let discount = .25
-let tax = .20
+let discount = .10
+let tax = .02
 
 products = [
     mouse = { 
@@ -11,14 +11,14 @@ products = [
     headset = {
         name: 'Wireless Headset',
         value: 1375}
-    ];
+];
 
 function getParcels(product, parcels) {
     console.log(`Full price: R$${product.value}`)
 
     let parcel
     if (parcels < 0 || parcels > 12 ) {
-        console.log(`Invalid number of parcels. (${parcels})`)
+        console.log(`Error: invalid number of parcels.`)
         return null
     } else {
         if (parcels <= 1) {

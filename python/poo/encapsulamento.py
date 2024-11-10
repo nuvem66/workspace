@@ -11,18 +11,11 @@ class Employee:
     
     # Métodos
     def increase(self, value):
-        if value > 0:
+        if value < 0:
+            return f"Failure. {value} <= 0."
+        else:
             self._salary += value
             return f"Success. +{value}."
-        else:
-            return f"Failure. {value} <= 0."
-        
-    def decrease(self, value):
-        if value > 0 and value <= self._salary:
-            self._salary -= value
-            return f"Success. -{value}."
-        else: 
-            return f"Failure.  {value} <= 0 or {value} > salary."
 
 # Instanciação
 class Manager(Employee):
@@ -39,8 +32,8 @@ print(Joao, '\n')
 Joao.increase(2000)
 print(Joao, '\n')
 
-Joao.decrease(700)
-print(Joao, '\n')
-
 Bob = Manager('Bob', 'Arquiteto', 10000)
+print(Bob, '\n')
+
+Bob.increase(340)
 print(Bob, '\n')

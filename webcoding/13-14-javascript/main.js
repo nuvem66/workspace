@@ -27,7 +27,6 @@ function getParcels(product, parcels) {
             return parcel
         } else {
             parcel = (product.value) / parcels
-
             if (parcels < 11) {
                 console.log(`${parcels} parcels. ${parcel} each.`)
                 return parcel

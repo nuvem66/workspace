@@ -1,5 +1,13 @@
 @import url('https://fonts.cdnfonts.com/css/triforce');
 
+:root{
+    --light-yellow: #e0cb9f;
+    --darker-yellow: hsl(41, 51%, 50%);
+    --transparent-yellow: rgba(224, 203, 159, .6);
+    --black-2: rgba(0, 0, 0, .8);
+    --black-1: rgba(0, 0, 0, .4);
+}
+
 body{
     font-size: 20px;
     font-family: 'Triforce', sans-serif;
@@ -19,7 +27,7 @@ p, a, li{
 }
 
 h1, h2, h3{
-    color: #e0cb9f;
+    color: var(--light-yellow);
     font-weight: bold;
     text-shadow: 5px 5px 8px rgba(0, 0, 0, 1);
     margin: 1rem 0;
@@ -40,30 +48,46 @@ h3{
 
 a{
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
-    color: #e0cb9f;
+    color: var(--light-yellow);
     text-decoration: none;
     font-style: italic;
     transition: all .5s ease;
 }
 a:hover{
-    color: hsl(41, 51%, 50%);
+    color: var(--darker-yellow);
 }
 
 .intro > header{
     text-align: center;
-    border:10px solid rgba(0, 0, 0, .6);
+    border:10px solid var(--black-1);
     border-radius: 10px;
     margin: auto;
     margin-bottom: 10px;
-    padding: 100px 10px;
+    padding: 80px 0;
     background: url(https://www.pixelstalk.net/wp-content/uploads/images2/Download-Hd-Zelda-Wallpapers-Images.jpg);
     background-position: center;
-    background-size: 100%;
-    transition: 1s ease
+    transition: 1s ease;
+
+    /* Zoom-in */
+    background-size: 130%;
+
+    /* Zoom-out */
+    /* background-size: 160%; */
 } 
+
 .intro > header:hover{
-    background-size: 120%;
+    /* Zoom-in */
+    background-size: 160%;
+
+    /* Zoom-out */
+    /* background-size: 130%; */
 }
+
+/* Tried those two with the 'cover' keyword,
+   but, sadly, the transitions don't work with
+   it. So I ended with a ugly-repeating bg in
+   smaller widths.
+*/
 
 .summary *{
     margin: 10px 0;
@@ -80,24 +104,17 @@ a:hover{
 }
 
 .participation, .benefits, .requirements{
-    flex: 1 1 30ch;
-    background-color: rgba(0, 0, 0, .4);
+    flex: 1 1 0;
+    background-color: var(--black-1);
     padding: 10px;
+    margin: 5px;
     border-radius: 5px;
     transition: all .5s ease;
-}
-.participation{
-    margin: 0 5px 0 0;
-}
-.benefits{
-    margin: 0 5px 0 5px;
-}
-.requirements{
-    margin: 0 0 0 5px;
+    gap: 10px;
 }
 
 .participation:hover, .benefits:hover, .requirements:hover{
-    background-color: rgba(0, 0, 0, .8);
+    background-color: var(--black-2);
 }
 
 #zen-supporting > footer{
@@ -107,12 +124,11 @@ a:hover{
 }
 
 .sidebar > .wrapper{
-    background: url(https://wallpapercave.com/wp/wp10602533.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    border: 10px solid  rgba(0, 0, 0, .4);
+    border: 10px solid  var(--black-1);
     padding: 10px;
     transition: all 1s ease;
 }

@@ -1,5 +1,5 @@
 const BODYSTYLE = document.querySelector('body').style;
-
+const IMG = document.querySelectorAll('img');
 // Same as document.body.style
 
 // got the following from:
@@ -46,7 +46,13 @@ function changeBg(color) {
     
     if(isValidColor(color)) {
         BODYSTYLE.backgroundColor = color;
-        if(BODYSTYLE.backgroundColor == 'black' || BODYSTYLE.backgroundColor == 'rgb(0, 0, 0)') BODYSTYLE.color = 'white';
+        if(BODYSTYLE.backgroundColor == 'black' || BODYSTYLE.backgroundColor == 'rgb(0, 0, 0)') {
+            BODYSTYLE.color = 'white'
+            IMG[0].style.borderColor = 'white'
+        } else if(BODYSTYLE.backgroundColor == 'rgb(255, 0, 245)') {
+            IMG[0].src = 'https://radahl.no/wp-content/uploads/sites/12/2021/11/csm-gcd.gif'
+            IMG[0].style.height = '600px'
+        }
     } else{
         alert('Error: not a valid CSS color, RGB or HEX code.')
     }

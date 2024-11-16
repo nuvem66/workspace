@@ -12,8 +12,8 @@ h1{
     font-weight: bold;
 }
 img{
-    margin: auto;
+    margin: 20px auto;
     border: solid black 5px;
     border-radius: 3px;
-    width: 60%;
+    width: 40%;
 }

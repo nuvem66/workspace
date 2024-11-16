@@ -51,7 +51,6 @@ function changeBg(color) {
             IMG[0].style.borderColor = 'white'
         } else if(BODYSTYLE.backgroundColor == 'rgb(255, 0, 245)') {
             IMG[0].src = 'https://radahl.no/wp-content/uploads/sites/12/2021/11/csm-gcd.gif'
-            IMG[0].style.height = '600px'
         }
     } else{
         alert('Error: not a valid CSS color, RGB or HEX code.')

@@ -33,9 +33,8 @@ function isValidColor(color) {
     // Browser tries changing the color
     // If valid, color changes. If not, color stays the same
     
-    // Returns 'false' if color wasn't assigned
-    if (styled.color == color || styled.color == toRgb(color)) return true;
-    else return false;
+    // Returns 'false' if color wasn't assigned at all
+    return styled.color == color || styled.color == toRgb(color) ? true : false;
     // So here's the thing: Browser converts HEX to RGB. So the condition,
     // when receiving HEX values, will always return 'false', bc it's trying
     // to compare 1 RGB string with 1 HEX string;
@@ -49,7 +48,7 @@ function changeBg(color) {
         if(BODYSTYLE.backgroundColor == 'black' || BODYSTYLE.backgroundColor == 'rgb(0, 0, 0)') {
             BODYSTYLE.color = 'white'
             IMG[0].style.borderColor = 'white'
-        } else if(BODYSTYLE.backgroundColor == 'rgb(255, 0, 245)') {
+        } else if (BODYSTYLE.backgroundColor == 'rgb(255, 0, 245)') {
             IMG[0].src = 'https://radahl.no/wp-content/uploads/sites/12/2021/11/csm-gcd.gif'
         }
     } else{
@@ -58,4 +57,4 @@ function changeBg(color) {
 
 }
 
-changeBg(prompt('Color: \nrgb(0, 0, 0)\n#000000\nBlack'));
+changeBg((prompt('Color: \n"rgb(0, 0, 0)"\n"#000000"\n"Black"')));

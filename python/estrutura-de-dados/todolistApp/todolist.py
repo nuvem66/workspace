@@ -125,8 +125,9 @@ def main():
             case "7":
                 clearList(input("\n1. Clear all done tasks.\n2. Clear all tasks.\n\nOption: "))
             case _ :
-                print("Invalid option. Leaving.")
-                break
+                if (input('Invalid option. Type "no" if you do not want to leave: ').lower()) != "no":
+                    break
+                
         time.sleep(1)
         os.system('clear')
     

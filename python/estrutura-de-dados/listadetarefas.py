@@ -31,16 +31,4 @@ def concluirTarefa(tarefa):
     estado_tarefa[pesquisaTarefas(tarefa)] = "Concluída"
     exibirTarefas()
 
-addTarefa('trabalhar')
-addTarefa('comprar')
-addTarefa('limpar')
-
-exibirTarefas()
-print()
-pesquisaTarefas('limpar')
-print()
-remTarefas('trabalhar')
-print()
-concluirTarefa('comprar')
-
 

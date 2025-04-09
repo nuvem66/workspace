@@ -11,4 +11,4 @@
 - DSA 
 - Websites
 - Responsiveness
-- etc
+- Anything more that makes my brain tickle

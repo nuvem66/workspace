@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 480px){
+    div.search {
+        padding: 8px !important;
+    }
+
     button.collapsed-search {
         display: flex !important;
         align-items: center;

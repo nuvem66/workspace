@@ -104,29 +104,64 @@ main.container{
 span.locations {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    font-weight: normal;
+    font-weight: bold;
     padding: 8px;
     border-radius: 4px;
-    font-size: small;
+    font-size: medium;
 }
 
 div.location-cards {
+    margin: 0 auto;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 20px;
 }
 
 div.card {
+    max-height: fit-content;
+    height: 100%;
     max-width: 290px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--gray);
-    border-radius: 8px;
+    gap: 10px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
 }
 
-.card section{
-    padding: 16px;
+div.card img{
+    border-radius: 10px 10px 0 0;
+}
+
+div.card section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    color: var(--black);
+}
+
+div.card p{
+    color: var(--gray);
+}
+
+div.card .spacer{
+    max-height: 10px;
+    height: 100%;
+}
+
+div.card a{
+    margin: 10px 0;
+    color: var(--black);
+    font-weight: bold;
+}
+
+div.card a .plus-sign{
+    color: var(--primary-color);
 }
 
 .flex-row {

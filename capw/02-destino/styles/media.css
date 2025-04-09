@@ -1,0 +1,52 @@
+@media (max-width: 1024px) {
+    div.hamburger-menu {
+        cursor: pointer;
+    }
+
+    div.hamburger-menu span{
+        height: 4px;
+        width: 24px;
+        background-color: var(--background);
+        display: block;
+        border-radius: 2px;
+    }
+    
+    div.hamburger-menu .nahida{
+        margin: 4px 0;  
+    }
+
+    ul.list-menu{
+        display: none;
+    }
+
+    div.search{
+        max-width: 100%;
+        padding-left: none;
+        padding-right: none;
+    }
+
+    
+}
+
+@media (max-width: 744px){
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    button.collapsed-search {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    button.expanded-search {
+        display: none;
+    }
+}

@@ -1,0 +1,141 @@
+@import url("reset.css");
+@import url("media.css");
+
+header {
+    background-color: var(--primary-color);
+}
+
+header div.container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+div.header-top {
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease-in;
+}
+
+div.header-top ul {
+    gap: 60px;
+    color: var(--secondary-color);
+} 
+
+div.header-top a {
+    color: var(--secondary-color);
+}
+
+div.header-top a:hover {
+    color: var(--black);
+}
+
+div.search button:hover {
+    cursor: pointer;
+}
+
+div.header-bottom {
+    /* color: var(--background); */
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.search {
+    width: 100%;
+    max-width: 700%;
+    background-color: var(--background);
+    padding: 16px;
+    border-radius: 10px;
+    border-color: var(--border);
+}
+
+div.search button {
+    color: white;
+    background-color: var(--black);
+    border-radius: 6px;
+    border-style: none;
+    font-weight: bold;
+}
+
+div.search button:hover {
+    cursor: pointer;
+}
+
+div.search button:active {
+    cursor: pointer;
+}
+
+button.expanded-search {
+    padding: 12px 72px;
+}
+
+button.collapsed-search {
+    display: none;
+    max-height: 64px;
+    width: 80px;
+    height: 100%;
+}
+
+button.collapsed-search img{
+    max-height: 31px;
+    
+}
+
+
+div.search input {
+    border-style: none;
+    background-color: var(--background);
+    outline: none;
+    width: 100%;
+}
+
+main.container{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+span.locations {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: normal;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: small;
+}
+
+div.location-cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.card {
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+}
+
+.card section{
+    padding: 16px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-itens-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
